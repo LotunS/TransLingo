@@ -15,9 +15,9 @@ const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
     try {
         console.log("Registering commands...");
 
-        //DEBUG
-        console.log("CLIENT_ID:", process.env.CLIENT_ID);
-        console.log("GUILD_ID:", process.env.GUILD_ID);
+        // DEBUG
+        // console.log("CLIENT_ID:", process.env.CLIENT_ID);
+        // console.log("GUILD_ID:", process.env.GUILD_ID);
 
         const result = await rest.put(
             Routes.applicationGuildCommands(
