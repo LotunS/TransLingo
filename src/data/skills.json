@@ -1,0 +1,2473 @@
+[
+    {
+        "name": "Aberrancy",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "When taking DMG, if the attacker is affected by ailment or debuff, reduces DMG taken by the caster.",
+        "cooldown": null,
+        "keywords": [
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10579.webp"
+    },
+    {
+        "name": "Abyssal Hand",
+        "class": "Arcanist",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Dark DMG once to all enemies within 2 grids of the target grid, with a 50% base chance to inflict Slow 1 for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Slow 1: Reduces SPD by 15%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10040.webp"
+    },
+    {
+        "name": "Air Break",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Physical Doom DMG once, with an 80% base chance to inflict Armor Break 2 for 2 turns. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Armor Break 2: Reduces DEF by 30%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10087.webp"
+    },
+    {
+        "name": "Aqua Vortex",
+        "class": "Archmage",
+        "type": "Technique",
+        "description": "Creates a vortex at a selected grid within 4 grids of the caster. The vortex deals Water DMG once to all enemies within 2 grids and pulls them to its center, with a 40% base chance to inflict Wet for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Wet: Increases the chance of being Frozen by 30%.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10062.webp"
+    },
+    {
+        "name": "Asura's Grasp",
+        "class": "Berserker",
+        "type": "Technique",
+        "description": "The caster's next damaging Technique deals Doom DMG with a DMG boost.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10063.webp"
+    },
+    {
+        "name": "Blade Siphon",
+        "class": "Berserker",
+        "type": "Charm",
+        "description": "Heals the caster once each time the caster's Technique deals Crit DMG to an enemy.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10519.webp"
+    },
+    {
+        "name": "Blade Storm",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "Deals Wind DMG 3 times to all enemies in a 1×4 grid area in front of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10088.webp"
+    },
+    {
+        "name": "Blade Tempest",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, there's a 40% chance to trigger Sword Gale that deals additional Wind DMG once.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10562.webp"
+    },
+    {
+        "name": "Blade of Judgment",
+        "class": "Berserker",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, inflicts 1 stack of Mark on them. When Mark stacks to 10, deals Physical DMG once to the target.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10574.webp"
+    },
+    {
+        "name": "Blade of Lament",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Each time a Technique deals DMG to an enemy, triggers a Lifesteal effect, up to 50% of the caster's max HP.",
+        "cooldown": null,
+        "keywords": [
+            "Lifesteal: Heals the caster for a percentage of DMG dealt to the target. DMG to shields does not trigger this effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10544.webp"
+    },
+    {
+        "name": "Blast Spirit",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Places 2 Blast Spirits in front of the caster. They remain on the battlefield for up to 3 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Blast Spirit: Activates the Blast Spirit at the end of the caster's turn. If an enemy is within 2 grids of the caster, it explodes to deal Fire DMG once to all enemies within range. Explosion DMG counts as Technique DMG.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10094.webp"
+    },
+    {
+        "name": "Blazing Clash",
+        "class": "Duelist",
+        "type": "Charm",
+        "description": "Increase the caster's DMG dealt for every 4 Techniques used. Stacks up to 3 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10564.webp"
+    },
+    {
+        "name": "Blazing Fire Ring",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Fire DMG once to all enemies within 2 grids of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10031.webp"
+    },
+    {
+        "name": "Blazing Momentum",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals Crit DMG to an enemy, deals additional Fire DMG once to all enemies within 1 grid of the target.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10543.webp"
+    },
+    {
+        "name": "Block Awareness",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's Block Rate.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10507.webp"
+    },
+    {
+        "name": "Block Mastery",
+        "class": "Paladin",
+        "type": "Charm",
+        "description": "Increases the caster's Block Efficiency.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10587.webp"
+    },
+    {
+        "name": "Boiling Bloodlust",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Increases the caster's Crit Rate and Crit DMG for 4 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 6",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10051.webp"
+    },
+    {
+        "name": "Chaos Rune",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 3 grids of the caster, dealing Dark DMG once, with a 40% base chance to inflict Frenzy for 1 turn.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Frenzy [Ailment]: Frenzied enemies treat all targets except themselves as enemies. When using Techniques, they randomly target enemies within their attack range. Summoning Techniques remain available, but self-targeting Techniques (grant buffs, healing, shields, etc.) are disabled while frenzied.. Base Resilience Break: 60",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10059.webp"
+    },
+    {
+        "name": "Counter Blade",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "When damaged by an enemy's Technique within 2 grids of the caster, there is a 50% chance to counterattack, dealing Physical DMG once to the attacker.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10537.webp"
+    },
+    {
+        "name": "Crimson Whirl",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Deals Fire Doom DMG 3 times to all enemies in a 3×3 grid area in front of the caster.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10115.webp"
+    },
+    {
+        "name": "Crit Mastery",
+        "class": "Duelist",
+        "type": "Charm",
+        "description": "Increases the caster's Crit DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10588.webp"
+    },
+    {
+        "name": "Crystal Armor",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's DEF.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10501.webp"
+    },
+    {
+        "name": "Curse Resonance",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "For each ailment or debuff the target carries, Technique DMG dealt by the caster to that target increases. Stacks up to 3 times.",
+        "cooldown": null,
+        "keywords": [
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10578.webp"
+    },
+    {
+        "name": "Cursed Armor",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "Each time the caster takes Technique DMG, there's a 50% base chance to inflict Erosion on the attacker.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Erosion (Cursed Armor): At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10633.webp"
+    },
+    {
+        "name": "Cyclone",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Selects a grid within 6 grids of the caster. Deals Wind DMG once to all enemies within 2 grids of the target grid, knocking them airborne and pulling them to the target grid.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10006.webp"
+    },
+    {
+        "name": "Cyclone Lament",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "Increases the caster's Wind DMG. Each time the caster's Technique deals Wind DMG to an enemy, there is a 35% base chance to inflict Laceration for 1 turn.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Laceration (Cyclone Lament): Takes Wind DMG once when moving (including skill movement, knockback, or pull effects). Laceration status lasts 1 turn and can stack."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10598.webp"
+    },
+    {
+        "name": "Dark Bullet",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 4 grids of the caster, dealing Dark DMG once, with a 50% base chance to inflict Erosion.",
+        "cooldown": null,
+        "keywords": [
+            "Erosion (Dark Bullet): At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10081.webp"
+    },
+    {
+        "name": "Dark Starburst",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Deals Dark DMG 3 times to 1 enemy within 4 grids of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10103.webp"
+    },
+    {
+        "name": "Darkness Descends",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Leaps to any empty grid within 5 grids of the caster. Deals Dark DMG once to 1 enemy within 1 grid of the caster and randomly dispels 1 buff. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10055.webp"
+    },
+    {
+        "name": "Dawnburst",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Deals Light DMG once to all enemies within 3 grids of the caster. (Large targets may take multiple hits.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10106.webp"
+    },
+    {
+        "name": "Decoy Clone",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Summons a Clone in front of the caster and connects it with 1 enemy. When the Clone's HP decreases, the connected target loses an equal amount of HP. The Clone lasts for 3 turns, inherits 60% of the target's DEF and a percentage of its other stats, and is prioritized by allies as an attack target. (Zero Initial CD)",
+        "cooldown": "Cooldown: 3",
+        "keywords": [
+            "Connection: Prioritizes connecting to large-sized targets. Each target can only be connected to one clone.",
+            "Prioritized as Attack Target: Techniques prioritizing large targets will also attack clones first, except for Divine Wrath.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting.",
+            "Clone: The clone's type (Character, Summon, Monster, Fantomon, etc.) matches the connected target. When the clone takes lethal DMG, that DMG (including any overflow) chains to the connected target. When the clone disappears, any debuffs on it chain to the connected target."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10097.webp"
+    },
+    {
+        "name": "Defensive Assault",
+        "class": "Knight",
+        "type": "Charm",
+        "description": "Grants an ATK boost when the caster is shielded.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10540.webp"
+    },
+    {
+        "name": "Desperate Protection",
+        "class": "Paladin",
+        "type": "Technique",
+        "description": "Grants a shield based on the caster's DEF to the ally with the lowest HP within 3 grids of the caster, lasting for 3 turns.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10032.webp"
+    },
+    {
+        "name": "Desperate Shadow",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Deals Dark DMG once to all enemies within a 1×4 grid area in front of the caster, with a 70% base chance to inflict 1 random debuff (Weakened 2, Armor Break 2, or Slow 2) for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Weakened 2: Reduces ATK by 30%. When multiple levels of the same status exist, only the highest level takes effect.",
+            "Armor Break 2: Reduces DEF by 30%. When multiple levels of the same status exist, only the highest level takes effect.",
+            "Slow 2: Reduces SPD by 30%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10122.webp"
+    },
+    {
+        "name": "Desperate Valor",
+        "class": "Berserker",
+        "type": "Charm",
+        "description": "Increase the caster's DMG dealt for every 15% HP lost. This effect stacks up to 5 times and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10547.webp"
+    },
+    {
+        "name": "Dew's Blessing",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Water DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10521.webp"
+    },
+    {
+        "name": "Divine Wrath",
+        "class": "Archmage",
+        "type": "Technique",
+        "description": "Selects a target within 4 grids of the caster. Randomly deals Light DMG 16 times within 3 grids of the target, hitting at least 3 times. DMG decreases by 40% for each subsequent hit on the same target. (Prioritizes the skill range that contains large targets.)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10037.webp"
+    },
+    {
+        "name": "Diving Gale",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Selects a grid within 4 grids of the caster. Deals Wind DMG once to all enemies within 1 grid of the target grid.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10043.webp"
+    },
+    {
+        "name": "Dominant Gaze",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "Deals increased Technique DMG to targets above 70% HP.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10620.webp"
+    },
+    {
+        "name": "Doom Blade",
+        "class": "Berserker",
+        "type": "Technique",
+        "description": "Leaps to any empty space within 5 grids of the caster, dealing Dark DMG once to all enemies within 2 grids of the caster, knocking them airborne, with a 50% base chance to inflict Armor Break 2 for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Armor Break 2: Reduces DEF by 30%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10069.webp"
+    },
+    {
+        "name": "Dreadful Shadow",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "Attacks all enemies within 2 grids of the caster, dealing Dark DMG once, with a 60% base chance to inflict Fear for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Fear: Will not prioritize the inflictor of this status as an attack target."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10104.webp"
+    },
+    {
+        "name": "Eclipse Slash",
+        "class": "Berserker",
+        "type": "Technique",
+        "description": "Deals Physical DMG 6 times to 1 enemy within 1 grid of the caster. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10065.webp"
+    },
+    {
+        "name": "Edge Strike",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to 1 enemy within 1 grid of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10008.webp"
+    },
+    {
+        "name": "Elemental Body",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Elemental RES.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10583.webp"
+    },
+    {
+        "name": "Elemental Harmony",
+        "class": "Sorcerer",
+        "type": "Charm",
+        "description": "For each element among equipped Techniques that deal DMG, increases the caster's Elemental Mastery. Stacks up to 4 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10602.webp"
+    },
+    {
+        "name": "Elemental Mystery",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Elemental Mastery.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10555.webp"
+    },
+    {
+        "name": "Ember Flare",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "Increases the caster's Fire DMG. Killing an enemy has a 30% chance to place 1 Blast Spirit on the spot.",
+        "cooldown": null,
+        "keywords": [
+            "Blast Spirit: Activates the Blast Spirit at the end of the caster's turn. If an enemy is within 2 grids of the caster, it explodes to deal Fire DMG once to all enemies within range."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10627.webp"
+    },
+    {
+        "name": "Energy Burst",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Your next damaging Technique gains increased Accuracy and deals 50% more DMG.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10041.webp"
+    },
+    {
+        "name": "Explosive Spirit",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "For every Fire Technique cast, increases the caster's Crit Rate for 2 turns. Stacks up to 8 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10599.webp"
+    },
+    {
+        "name": "Eye for an Eye",
+        "class": "Knight",
+        "type": "Charm",
+        "description": "Each time the caster takes Technique DMG, increases the DMG of the caster's next Technique attack. This effect can stack up to 10 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10509.webp"
+    },
+    {
+        "name": "Falling Dark Star",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "At the start of the caster's turn, the caster gains 1 random buff that lasts until the start of the caster's next turn.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10611.webp"
+    },
+    {
+        "name": "Feline Dance",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's SPD.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10510.webp"
+    },
+    {
+        "name": "Fiery Burst",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals Fire Crit DMG to an enemy, deals additional Fire DMG once to all enemies within 2 grids of the target.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10503.webp"
+    },
+    {
+        "name": "Fiery Rejuvenation",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "At the end of the caster's turn, if there are grounds inflicted with Burn within 2 grids of the caster, heals the caster once. Increases the healing power by 10% for each additional Burning grid in the area. Stacks up to 5 times.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Burn: Inflicts Burn for 3 turns, dealing Fire DMG once to enemies with it. DMG Triggers: 1. When the grids is newly inflicted with Burn; 2. When an enemy moves to the Burned grids (doesn't apply to traversal); 3. At the start of a turn for an enemy standing on the Burned grids. Multiple instances of Burn DMG from the same skill by the same caster in one turn are reduced by 35% successively, up to 3 times. Notes: 1. On the same grid, the newly inflicted Burn will replace the old one. 2. Burn cannot be inflicted on water surfaces."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10597.webp"
+    },
+    {
+        "name": "Fiery Star Trail",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Deals Fire Doom DMG twice to all enemies within a 3-grid circular area of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10034.webp"
+    },
+    {
+        "name": "Fire Blast",
+        "class": "Archmage",
+        "type": "Technique",
+        "description": "Deals Fire DMG once to 1 enemy within 5 grids of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10098.webp"
+    },
+    {
+        "name": "Fire Slash",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Deals Fire Doom DMG once to all enemies in a 3×2 grid area in front of the caster.",
+        "cooldown": null,
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10026.webp"
+    },
+    {
+        "name": "Fireball",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Selects a grid within 5 grids of the caster. Deals Fire DMG once to all enemies within a 1-grid square area of the target grid.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10028.webp"
+    },
+    {
+        "name": "First Light",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Removes all shields to select a grid within 4 grids of the caster and deals Light DMG once to all enemies within a 1-grid square area around the target grid. The DMG dealt is a percentage of the shields consumed.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10105.webp"
+    },
+    {
+        "name": "Flame Aura",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Grants Flame to the caster and 3 random allies within 3 grids of the caster for 2 turns. This effect cannot be dispelled.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Flame: Deals Fire DMG once to all enemies in a 1-grid square area of the bearer. Triggers: when the status is gained, at the start of the bearer's turn, after the bearer moves, and when enemy targets enter the range. DMG is attributed to the caster. This effect does not stack."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10061.webp"
+    },
+    {
+        "name": "Flame Jet",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Fire DMG 3 times to all enemies in a 1×3 grid area in front of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10072.webp"
+    },
+    {
+        "name": "Flame Wolf Summon",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Summons 2 Flame Wolves in front of the caster that immediately acts. The summons inherit a percentage of the caster's stats, but cannot be the primary target of attacks or healing. They remain for up to 2 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10058.webp"
+    },
+    {
+        "name": "Flaming Heel",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "After actively moving, deals Fire DMG once to all enemies within 1 grid of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10622.webp"
+    },
+    {
+        "name": "Flaming Path",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "When the caster starts to move in their turn, there is a 30% chance to inflict Burn to grids within 1 grid of the caster.",
+        "cooldown": null,
+        "keywords": [
+            "Burn: Inflicts Burn for 3 turns, dealing Fire DMG once to enemies with it. DMG Triggers: 1. When the grids is newly inflicted with Burn; 2. When an enemy moves to the Burned grids (doesn't apply to traversal); 3. At the start of a turn for an enemy standing on the Burned grids. Multiple instances of Burn DMG from the same skill by the same caster in one turn are reduced by 35% successively, up to 3 times. Notes: 1. On the same grid, the newly inflicted Burn will replace the old one. 2. Burn cannot be inflicted on water surfaces."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10561.webp"
+    },
+    {
+        "name": "Flash Dash",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Dashes 5 grids in a straight line, dealing Physical Doom DMG once to all enemies in a 1×4 grid area along the path. (Cannot penetrate enemies larger than 4 grids)",
+        "cooldown": null,
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10016.webp"
+    },
+    {
+        "name": "Flash Fire",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "Leaps to an empty grid adjacent to an enemy target that is 2 grids from the caster, dealing Fire DMG once to that target. (Zero Initial CD)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10101.webp"
+    },
+    {
+        "name": "Flickering Blade",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "Deals Fire DMG once to 1 enemy within 1 grid of the caster. If the target is not defeated, there is a 60% chance to cast this skill again. Can be cast up to 2 additional times per turn.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10100.webp"
+    },
+    {
+        "name": "Flickering Stars",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Selects a grid within 6 grids of the caster. Deals Light DMG once to all enemies within 1 grid of the target grid and dispels 1 random buff from them.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10004.webp"
+    },
+    {
+        "name": "Flowing Doom",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Deals Water DMG 3 times to all enemies in a 3×5 grid area in front of the caster, with a 50% base chance to knock them back by 1 grid.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10056.webp"
+    },
+    {
+        "name": "Forceful Charge",
+        "class": "Paladin",
+        "type": "Technique",
+        "description": "Charges in a straight line for 5 grids. Deals Physical DMG once to all enemies in a 3×4 grid area along the path, with a 100% base chance to knock them back 1 grid to either side.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10073.webp"
+    },
+    {
+        "name": "Formation Breaker",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Increases ATK for all allied characters within 3 grids of the caster by a percentage of the caster's ATK for 2 turns. This effect is unique. Also there's a 50% chance to advance the action bar of allied characters by 20%. (Zero Initial CD)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Action Advance: Advances the bearer's action bar, accelerating their turn.",
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10092.webp"
+    },
+    {
+        "name": "Frame of Battles",
+        "class": "Duelist",
+        "type": "Charm",
+        "description": "Reduces the caster's DMG taken for every 15% HP lost. This effect stacks up to 5 times and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10582.webp"
+    },
+    {
+        "name": "Frenzy Totem",
+        "class": "Arcanist",
+        "type": "Technique",
+        "description": "Summons a Totem in front of the caster that immediately acts. The summon inherits a percentage of the caster's stats, but cannot be the primary target of attacks or healing. It remains for up to 5 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 4",
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10080.webp"
+    },
+    {
+        "name": "Frigid Aura",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "When an enemy ends their turn within a 1-grid square area of the caster, there is a 100% chance to trigger Frigid Aura, dealing Water DMG once, with a 50% base chance. to inflict 1 stack of Cold for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Cold: Increases Water DMG taken by 5%. Stacks up to 10 times.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10607.webp"
+    },
+    {
+        "name": "Frigid Glint",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "Increases the caster's Water DMG. Each time the caster's Technique deals Water DMG to an enemy, there is a 100% base chance to inflict 1 stack of Cold for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Cold: Increases Water DMG taken by 5%. Stacks up to 10 times.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10606.webp"
+    },
+    {
+        "name": "Frost Guard",
+        "class": "Archmage",
+        "type": "Charm",
+        "description": "At the end of the caster's turn, if no Technique was cast this turn, the caster enters the Icebound status, which reduces DMG taken and lasts until the start of the caster's next turn. This status heals the caster once before it expires.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10605.webp"
+    },
+    {
+        "name": "Frost Thorn",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Deals Water DMG twice to all enemies in a 3×3 grid area in front of the caster, with a 30% base chance to inflict Frozen for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Frozen [Ailment]: Prevents movement and skill use, and disables activation of Charms or status effects that require casting. Cannot be frozen again while frozen. Base Resilience Break: 50"
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10114.webp"
+    },
+    {
+        "name": "Frostbite Blossom",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies within a 1-grid square area of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10044.webp"
+    },
+    {
+        "name": "Frostsoul Ward",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "Increases the caster's Water DMG. When attacked, there's a 70% base chance to inflict Wet on the attacker for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Wet: Increases the chance of being Frozen by 30%."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10596.webp"
+    },
+    {
+        "name": "Frosty Nova",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Water DMG once to all enemies within a 1-grid square area of the target grid, with a 30% base chance to inflict Frozen for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Frozen [Ailment]: Prevents movement and skill use, and disables activation of Charms or status effects that require casting. Cannot be frozen again while frozen. Base Resilience Break: 50",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10038.webp"
+    },
+    {
+        "name": "Gale Dance",
+        "class": "Berserker",
+        "type": "Technique",
+        "description": "Increases Movement by 2 grids and SPD by a percentage of the caster's Speed for all allied characters within 3 grids of the caster for 2 turns. This effect is unique. (Casts once before battle starts.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Movement: Usually, characters can move up to 4 grids per turn. Movement from skills is separate and does not count towards this limit.",
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained.",
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10086.webp"
+    },
+    {
+        "name": "Gale Shield",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Grants a shield based on the caster's max HP at the start of battle. When the shield disappears, deals Wind DMG once to all enemies within a 1-grid square area of the caster, with a 100% base chance to knock them back by 1 grid.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10513.webp"
+    },
+    {
+        "name": "Glacial Song",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Selects a grid within 4 grids of the caster. Deals Wind DMG once to all enemies within 2 grids of the target grid, with a 30% base chance to inflict Slow 2 for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Slow 2: Reduces SPD by 30%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10112.webp"
+    },
+    {
+        "name": "Gravity Pull",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Selects a grid within 7 grids of the caster. Deals Wind DMG once to all enemies within a 1-grid square area of the target grid and pulls them to the caster's location.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10018.webp"
+    },
+    {
+        "name": "Guardian Ring",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Grants a shield based on DEF to the caster for 2 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10046.webp"
+    },
+    {
+        "name": "Hamper Strike",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Selects a grid within 4 grids of the caster. Deals Light DMG once to all enemies within 2 grids of the target grid, with an 85% base chance to inflict Taunt for 1 turn. Increases the chance to Taunt non-character units by 100%.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Taunt: Taunted enemies target the caster only, and approach the caster when using damaging Techniques. Summoning Techniques remain available, but ally-targeting Techniques (grant buffs, healing, shields, etc.) are disabled while taunted.",
+            "Non-Character Units: Non-character units include Monsters, Summons, and materialized Fantomons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10084.webp"
+    },
+    {
+        "name": "Healing Mastery",
+        "class": "Sage",
+        "type": "Charm",
+        "description": "Enhances the caster's healing effects.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10514.webp"
+    },
+    {
+        "name": "Healing Shift",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "Increases healing received. Instead of restoring HP, all healing is converted at a 1:1 ratio into a shield for 2 turns. When the shield disappears, any remaining shield strength is converted 1:1 back into HP.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10613.webp"
+    },
+    {
+        "name": "Healing Touch",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Heals 1 ally within 5 grids of the caster once and dispels 1 random ailment or debuff from them.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10020.webp"
+    },
+    {
+        "name": "Heart of Challenge",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to all enemies within 3 grids of the caster, with an 85% chance to inflict Taunt for 1 turn. Has a 100% chance to inflict Taunt non-character units. (Casts once at the start of battle.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Taunt: Taunted enemies target the caster only, and approach the caster when using damaging Techniques. Summoning Techniques remain available, but ally-targeting Techniques (grant buffs, healing, shields, etc.) are disabled while taunted.",
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Non-Character Units: Non-character units include Monsters, Summons, and materialized Fantomons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10049.webp"
+    },
+    {
+        "name": "Heart of Flame",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Fire DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10520.webp"
+    },
+    {
+        "name": "Heavy Impact",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Physical DMG once and knocking them airborne (Prioritizes large targets)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10009.webp"
+    },
+    {
+        "name": "Hellfire Requiem",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "At the start of each turn for 2 turns, heals the caster once and dispels 2 random ailment or debuffs.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10068.webp"
+    },
+    {
+        "name": "Hexed Blast",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Dark DMG once to all enemies within 2 grids of the target grid. For each type of debuff the target carries, deals additional Dark DMG once, up to 3 times.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10121.webp"
+    },
+    {
+        "name": "Holy Aegis",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "Increases the caster's DEF. Increases the effectiveness of DEF-based shields granted by the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10593.webp"
+    },
+    {
+        "name": "Holy Bulwark",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "Counterattack skills deal more DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10612.webp"
+    },
+    {
+        "name": "Holy Purification",
+        "class": "Paladin",
+        "type": "Technique",
+        "description": "Deals Light Doom DMG once to all enemies in a 1×5 grid area in front of the caster and dispels 1 random buff from them.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10079.webp"
+    },
+    {
+        "name": "Holy Recuperation",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "At the end of the caster's turn, if no Techniques were cast this turn, heals the caster once and increases DMG dealt next turn by 50%.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10616.webp"
+    },
+    {
+        "name": "Holy Restoration",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "Casting each Light Technique has a 70% chance to gain 1 stack of Renewing Light. At 6 stacks of Renewing Light, heals the caster once.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10615.webp"
+    },
+    {
+        "name": "Howling Hurricane",
+        "class": "Archmage",
+        "type": "Technique",
+        "description": "Selects a grid within 5 grids of the caster. Deals Wind DMG 5 times to all enemies within 2 grids of the target grid, knocking them airborne.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10057.webp"
+    },
+    {
+        "name": "Hunter's Judgment",
+        "class": "Berserker",
+        "type": "Technique",
+        "description": "Selects a grid within 4 grids of the caster. Pulls all enemies within a 1-grid square area of the target grid to the grid in front of the caster, then deals Physical DMG 3 times to all enemies in a 3×3 grid area in front of the caster and knocks them airborne.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10074.webp"
+    },
+    {
+        "name": "Ice Spike",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies in a 1×5 grid area in front of the caster, with a 40% base chance to inflict Frozen for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Frozen [Ailment]: Prevents movement and skill use, and disables activation of Charms or status effects that require casting. Cannot be frozen again while frozen. Base Resilience Break: 50",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10035.webp"
+    },
+    {
+        "name": "Incarnation of Light",
+        "class": "Archmage",
+        "type": "Charm",
+        "description": "Increases the caster's Light DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10525.webp"
+    },
+    {
+        "name": "Indomitable Will",
+        "class": "Duelist",
+        "type": "Charm",
+        "description": "Upon taking lethal DMG for the first time, survives with 1 HP, enters the Indomitable status for 2 turns (cannot be dispelled), and heals the caster once.",
+        "cooldown": null,
+        "keywords": [
+            "Indomitable: Reduces DMG taken by 90%.",
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10518.webp"
+    },
+    {
+        "name": "Insight",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Effect Hit Rate.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10559.webp"
+    },
+    {
+        "name": "Insightful Eye",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's Crit Rate.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10500.webp"
+    },
+    {
+        "name": "Iron Fortress",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "At the start of battle, increases the DEF of all allied characters within a 3-grid square area of the caster by a percentage of the caster's own DEF. This effect is unique and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10571.webp"
+    },
+    {
+        "name": "Iron Slashes",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Deals Physical DMG twice to 1 enemy within 1 grid of the caster. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10109.webp"
+    },
+    {
+        "name": "Iron Thorn",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Wind DMG once to all enemies within 1 grid of the target grid, with a 30% base chance to inflict Immobilize for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Immobilize [Ailment]: Cannot move. Base Resilience Break: 30",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10005.webp"
+    },
+    {
+        "name": "Iron Will",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "Enemies affected by Taunt deal reduced DMG to the caster.",
+        "cooldown": null,
+        "keywords": [
+            "Taunt: Taunted enemies target the caster only, and approach the caster when using damaging Techniques. Summoning Techniques remain available, but ally-targeting Techniques (grant buffs, healing, shields, etc.) are disabled while taunted."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10592.webp"
+    },
+    {
+        "name": "Last Stand",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Moves to any empty space within 4 grids of the caster, dealing Physical DMG once to 1 enemy within 1 grid of the caster, with an 85% base chance to inflict Taunt for 1 turn. Increases the chance to Taunt non-character units by 100%. (Prioritizes large targets.)",
+        "cooldown": null,
+        "keywords": [
+            "Taunt: Taunted enemies target the caster only, and approach the caster when using damaging Techniques. Summoning Techniques remain available, but ally-targeting Techniques (grant buffs, healing, shields, etc.) are disabled while taunted.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Non-Character Units: Non-character units include Monsters, Summons, and materialized Fantomons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10067.webp"
+    },
+    {
+        "name": "Leap Attack",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Leaps to any empty space within 3 grids of the caster, dealing Physical DMG once to all enemies within 1 grid of the caster, with a 50% base chance to inflict Armor Break 2 for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Armor Break 2: Reduces DEF by 30%. When multiple levels of the same status exist, only the highest level takes effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10015.webp"
+    },
+    {
+        "name": "Life Blessing",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's HP.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10505.webp"
+    },
+    {
+        "name": "Light Burst",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Deals Light DMG once to 1 enemy within 4 grids of the caster. Each instance of damage can chain to 2 random enemies within 4 grids of the target, up to 2 times. Each enemy can only be hit once by the same chain.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10117.webp"
+    },
+    {
+        "name": "Light Sword Array",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Creates 4 light swords around the caster. When attacked, removes 1 sword to counterattack, dealing Light DMG once to all enemies within 1 grid of the attacker. (Casts before battle starts; Sword Formation counterattack counts as a Technique cast.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10083.webp"
+    },
+    {
+        "name": "Light of Dawn",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Deals Light Doom DMG twice to all enemies in a 1×8 grid area in front of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Doom DMG: Shield Break: Deals +100% DMG to the enemy target's shields. Deals +100% DMG to enemy summons."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10075.webp"
+    },
+    {
+        "name": "Lightning Chain",
+        "class": "Sorcerer",
+        "type": "Technique",
+        "description": "Deals Light DMG once to 1 enemy within 4 grids of the caster. The effect then chains to 1 random enemy within 4 grids of the target, up to 9 times. Each enemy can only be hit once by the chain effect.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10030.webp"
+    },
+    {
+        "name": "Lightning Mystery",
+        "class": "Sorcerer",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, there's a 30% chance to trigger Thunder Strike that deals additional Light DMG once.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10502.webp"
+    },
+    {
+        "name": "Linked Misfortune",
+        "class": "Arcanist",
+        "type": "Charm",
+        "description": "Each time the caster inflicts Erosion on an enemy, there's a 60% chance to inflict Erosion again.",
+        "cooldown": null,
+        "keywords": [
+            "Erosion (Linked Misfortune): At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10585.webp"
+    },
+    {
+        "name": "Lion Combo",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG 3 times to 1 enemy within 1 grid of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10011.webp"
+    },
+    {
+        "name": "Luminous Shield",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Increases the caster's Block Rate and Block Efficiency for 3 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 5",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10024.webp"
+    },
+    {
+        "name": "Lunarwater Threads",
+        "class": "Paladin",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies within 5 grids of the caster, with a 50% base chance to inflict 1 stack of Cold for 2 turns and pulls them to the caster's location.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Cold: Increases Water DMG taken by 5%. Stacks up to 10 times.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10017.webp"
+    },
+    {
+        "name": "Mana Blast",
+        "class": "Arcanist",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Dark DMG once to all enemies within 2 grids of the target grid with a 50% base chance to inflict Erosion.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Erosion (Mana Blast): At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10064.webp"
+    },
+    {
+        "name": "Mana Surge",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Crit Rate.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10554.webp"
+    },
+    {
+        "name": "Mantra of Blessings",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "At the start of the caster's turn, grants Blessing to the allied character with the highest ATK, increasing their DMG. This effect lasts until the start of the caster's next turn and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [
+            "Blessing: A character can only receive one Blessing at a time.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10610.webp"
+    },
+    {
+        "name": "Meteoric Flames",
+        "class": "Archmage",
+        "type": "Technique",
+        "description": "Selects a grid within 5 grids of the caster. Deals Fire DMG once to all enemies within a 1-grid square area of the target grid, with a 60% chance to inflict Burn on grids within range. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Burn: Inflicts Burn for 3 turns, dealing Fire DMG once to enemies with it. DMG Triggers: 1. When the grids is newly inflicted with Burn; 2. When an enemy moves to the Burned grids (doesn't apply to traversal); 3. At the start of a turn for an enemy standing on the Burned grids. Multiple instances of Burn DMG from the same skill by the same caster in one turn are reduced by 35% successively, up to 3 times. Notes: 1. On the same grid, the newly inflicted Burn will replace the old one. 2. Burn cannot be inflicted on water surfaces."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10070.webp"
+    },
+    {
+        "name": "Mountain Collapse",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to all enemies within 2 grids of the caster, knocking them airborne, with a 60% base chance to knock them back by 1 grid.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Airborne: Targets in the airborne cannot counterattack. Blocking removes the airborne state. Large targets cannot be knocked airborne. Airborne is a brief state. If left unharmed, the airborne target will soon fall and return to normal."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10052.webp"
+    },
+    {
+        "name": "Night Curse",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Attacks all enemies within 2 grids of the caster, dealing Dark DMG once, with a 80% base chance to inflict Blood Source for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Blood Source: When a target with Blood Source takes Technique DMG, 3% of the DMG dealt is converted to the attacker's HP (up to 50% of max HP). DMG taken by shields does not trigger this effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10090.webp"
+    },
+    {
+        "name": "Night's Blessing",
+        "class": "Arcanist",
+        "type": "Charm",
+        "description": "Increases the caster's Dark DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10528.webp"
+    },
+    {
+        "name": "Oath of Vigil",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "At the start of the caster's turn, grants Vigil to the allied adventurer with the lowest HP, taking 50% of DMG for them. Reduces DMG taken from this effect, with an additional 1% reduction for every 1% the caster's DEF exceeds the protected unit's. This effect cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [
+            "Vigil: A character can only receive Vigil once at a time, and Vigil cannot protect the caster themselves.",
+            "Adventurer: Main character only. Companions, summons, and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10580.webp"
+    },
+    {
+        "name": "Overhealing",
+        "class": "Arcanist",
+        "type": "Charm",
+        "description": "Has a 30% chance to additionally heal all allies within 1 grid of the target each time the caster heals allies with a Technique.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10570.webp"
+    },
+    {
+        "name": "Overload Protection",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "Within a single turn, each time the caster loses over 15% of max HP, grants the caster a shield based on their max HP for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10573.webp"
+    },
+    {
+        "name": "Phantom Assault",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to 1 enemy within 1 grid of the caster, then moves back 3 grids.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10054.webp"
+    },
+    {
+        "name": "Phantom Blade",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Deals Light DMG once to all enemies in a 3×4 grid area in front of the caster. (Large targets may take multiple hits.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10085.webp"
+    },
+    {
+        "name": "Phantom Light",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "Increases the caster's healing effects. When a Technique's healing overflows, converts 100% of the overheal into a shield for the target, lasting 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10601.webp"
+    },
+    {
+        "name": "Piercing Assault",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, the caster ignores a portion of the target's DEF. The DEF ignorance increases by 10% for each buff the caster has, stacking up to 3 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10568.webp"
+    },
+    {
+        "name": "Potential Rebirth",
+        "class": "Paladin",
+        "type": "Charm",
+        "description": "Upon taking lethal DMG for the first time, the caster survives with 1 HP, heals the caster once, and dispels all dispellable effects on the caster.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10581.webp"
+    },
+    {
+        "name": "Potential Vitality",
+        "class": "Duelist",
+        "type": "Charm",
+        "description": "Increases the caster's healing received for every 15% HP lost. This effect stacks up to 5 times and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10589.webp"
+    },
+    {
+        "name": "Protective Rune",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Reduces direct DMG the caster takes from Techniques. Also boosts the caster's other DMG Reduction effects by an extra 20%. Lasts 3 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 4",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10102.webp"
+    },
+    {
+        "name": "Punishment Sigil",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "Each time the caster blocks an enemy's Technique attack, there's a 100% base chance to inflict Sigil.",
+        "cooldown": null,
+        "keywords": [
+            "Punishment Sigil: Increases DMG taken for the next Technique hit. Prioritizes the inflicted target for enemy attacks.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10614.webp"
+    },
+    {
+        "name": "Pure Protection",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "In battle, each time the caster's HP drops below 50%, grants a shield to the caster based on DEF.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10539.webp"
+    },
+    {
+        "name": "Pursuit of Victory",
+        "class": "Knight",
+        "type": "Charm",
+        "description": "Increases the Resilience Break efficiency of the caster's skills. Additionally, deals increased Technique DMG to enemies affected by ailments or debuffs.",
+        "cooldown": null,
+        "keywords": [
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10516.webp"
+    },
+    {
+        "name": "Quadrant Slash",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to all enemies within 1 grid of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10013.webp"
+    },
+    {
+        "name": "Radiant Restoration",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Heals all allies within 4 grids of the caster once.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10021.webp"
+    },
+    {
+        "name": "Radiant Rhythm",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Heals 1 ally within 4 grids of the caster once. The effect then chains to 1 random ally within 4 grids of the target, up to 5 times. Repeated healing on the same target is diminished by 35% per instance.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10123.webp"
+    },
+    {
+        "name": "Radiant Sear",
+        "class": "Archmage",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, there's a 50% chance to deal additional Light DMG once, with a 30% base chance to inflict Blind.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Blind: Grants a 50% chance to miss the target when using the next damaging Technique."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10577.webp"
+    },
+    {
+        "name": "Radiant Warp",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "Increases the caster's DMG RES. When taking Technique DMG, there's a 50% chance to teleport to any empty grid within 4 grids of the caster. Can trigger only once per turn.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10626.webp"
+    },
+    {
+        "name": "Raging Maelstrom",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies within 3 grids of the caster, with a 40% base chance to knock them back by 1 grid towards the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10099.webp"
+    },
+    {
+        "name": "Raging Wildfire",
+        "class": "Sorcerer",
+        "type": "Charm",
+        "description": "Has a 20% chance to inflict Burn to grids within range when casting a Fire Technique.",
+        "cooldown": null,
+        "keywords": [
+            "Burn: Inflicts Burn for 3 turns, dealing Fire DMG once to enemies with it. DMG Triggers: 1. When the grids is newly inflicted with Burn; 2. When an enemy moves to the Burned grids (doesn't apply to traversal); 3. At the start of a turn for an enemy standing on the Burned grids. Multiple instances of Burn DMG from the same skill by the same caster in one turn are reduced by 35% successively, up to 3 times. Notes: 1. On the same grid, the newly inflicted Burn will replace the old one. 2. Burn cannot be inflicted on water surfaces."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10576.webp"
+    },
+    {
+        "name": "Rapid Cast",
+        "class": "Archmage",
+        "type": "Charm",
+        "description": "Increases the caster's Elemental Mastery. At the start of battle, reduces the CD of all Techniques by 1 turn. (Techniques already off cooldown are not affected.)",
+        "cooldown": null,
+        "keywords": [
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10604.webp"
+    },
+    {
+        "name": "Rebound",
+        "class": "Knight",
+        "type": "Charm",
+        "description": "Each time the caster blocks an enemy's Technique attack, deals Physical DMG once to the attacker based on the caster's DEF.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10541.webp"
+    },
+    {
+        "name": "Reflective Armor",
+        "class": "Paladin",
+        "type": "Charm",
+        "description": "While shielded, the caster reflects a percentage of DMG taken back to the attacker as Light DMG once for each Technique attack received.",
+        "cooldown": null,
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10567.webp"
+    },
+    {
+        "name": "Rejuvenating Elixir",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "Carries 3 potions at the start of battle. When an allied character's HP falls below 50%, uses a potion to heal them. Produces 1 potion every 3 turns, holding up to 3 at a time.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10632.webp"
+    },
+    {
+        "name": "Rejuvenating Rain",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Heals 1 ally within 5 grids of the caster once. If the target's HP is below 50%, this healing effect is increased by 20%.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10096.webp"
+    },
+    {
+        "name": "Relentless Frenzy",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increase the caster's SPD for each enemy unit killed. Stacks up to 4 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10546.webp"
+    },
+    {
+        "name": "Repelling Wind",
+        "class": "Archmage",
+        "type": "Charm",
+        "description": "Has a 75% chance to trigger Repelling Wind when an enemy actively enters within 2 grids of the caster, dealing Wind DMG once, with a 100% base chance to knock them back 2 grids. (Triggers again if they approach repeatedly)",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK.",
+            "Approach: After being knocked back, if Movement is above 0, approaches the target to unleash a Technique. Before the caster's turn ends, if a Technique is ready but out of range, spends remaining Movement to approach the nearest target."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10566.webp"
+    },
+    {
+        "name": "Resurrection",
+        "class": "Sage",
+        "type": "Charm",
+        "description": "When an allied adventurer dies, immediately revives and heals them once, granting Revitalization for 2 turns (cannot be dispelled). This Charm can only trigger once per battle. At the start of battle, if multiple allied adventurers are dead, reviving the one with the highest Power first.",
+        "cooldown": null,
+        "keywords": [
+            "Revitalization: Reduces DMG taken by 90%.",
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Adventurer: Main character only. Companions, summons, and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10531.webp"
+    },
+    {
+        "name": "Ricocheting Shield",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to 1 enemy within 3 grids of the caster, then bounces to another random enemy within 3 grids up to 4 times. 30% base chance to inflict Stun for 1 turn when dealing damage. (Large targets may take multiple hits.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Stun [Ailment]: Prevents skill CD reduction, movement, and skill use during the affected unit's turn. Also blocks activation of Charms or statuses that require casting. Base Resilience Break: 50",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10048.webp"
+    },
+    {
+        "name": "Ring of Omen",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "At the start of the caster's turn, reduces Effect RES of all enemies within 5 grids of the caster. This effect is unique. Also there's a 50% base chance to inflict Vulnerability for 1 turn.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Vulnerability: Increases DMG taken by 25%.",
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10631.webp"
+    },
+    {
+        "name": "Ripple Impact",
+        "class": "Knight",
+        "type": "Charm",
+        "description": "When the caster's shield is fully broken, deals Water DMG once to all enemies within 2 grids of the caster, with a 100% base chance to inflict 3 stacks of Cold for 2 turns.",
+        "cooldown": null,
+        "keywords": [
+            "Cold: Increases Water DMG taken by 5%. Stacks up to 10 times.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10563.webp"
+    },
+    {
+        "name": "Rock Rex Summon",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Summons 1 Rock Rex in front of the caster. The summon inherits a percentage of the caster's stats. (The Technique can only trigger once per battle.)",
+        "cooldown": null,
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10095.webp"
+    },
+    {
+        "name": "Sacred Rhythm",
+        "class": "Templar",
+        "type": "Charm",
+        "description": "From the caster's 3rd turn onward, increases DMG dealt at the start of each turn. Stacks up to 3 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10617.webp"
+    },
+    {
+        "name": "Sacred Shine",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Light DMG once to all enemies within a 1-grid square area of the target grid.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10107.webp"
+    },
+    {
+        "name": "Sanctified Soul",
+        "class": "Templar",
+        "type": "Technique",
+        "description": "Enters the Sanctification state for 2 turns, reducing DMG taken by the caster and all allied characters within 4 grids of the caster. The effect is unique and cannot be dispelled. (Zero Initial CD)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10108.webp"
+    },
+    {
+        "name": "Scarlet Zeal",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "Each Technique cast grants a stack of Battle Zeal and increases the caster's ATK. At 6 stacks, Battle Zeal converts to Scarlet Zeal, greatly increasing the caster's ATK for 2 turns. (Battle Zeal doesn't stack while Scarlet Zeal is active.)",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10623.webp"
+    },
+    {
+        "name": "Seismic Tide",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies within 2 grids of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10047.webp"
+    },
+    {
+        "name": "Shadow End",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Teleports to an empty grid adjacent to 1 enemy within 5 grids of the caster. Deals Dark DMG once to the target. Killing the target triggers this skill again. Can be cast up to 4 additional times per turn.",
+        "cooldown": "Cooldown: 2",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10113.webp"
+    },
+    {
+        "name": "Shadow Erosion",
+        "class": "Sage",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals Dark DMG to an enemy, there is a 40% base chance to inflict Erosion.",
+        "cooldown": null,
+        "keywords": [
+            "Erosion (Shadow Erosion): At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10565.webp"
+    },
+    {
+        "name": "Shadow Impact",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Dark DMG once to all enemies within 2 grids of that target grid. If the enemy target carries Erosion, triggers Erosion effect twice immediately.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Erosion: At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10076.webp"
+    },
+    {
+        "name": "Shadow Vengeance",
+        "class": "Arcanist",
+        "type": "Charm",
+        "description": "Upon taking lethal DMG for the first time, the caster survives with 1 HP and enters Shadow Form, lasting until the end of the caster's turn (cannot be dispelled). In this form, the caster is immune to all DMG, can't be healed, won't be the primary target of attacks, deals increased DMG, and reduces Technique CD by 2 turns. (The caster dies immediately if failing to win when Shadow Form ends, ignoring any effects that would preserve HP.)",
+        "cooldown": null,
+        "keywords": [
+            "Note: At the start of the caster's turn, the Techniques selected are locked for that round. Cooldown reductions during the turn won't affect the sequence."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10586.webp"
+    },
+    {
+        "name": "Shadow of Termination",
+        "class": "Arcanist",
+        "type": "Technique",
+        "description": "Deals Dark DMG once to 1 enemy within 3 grids of the caster. If the target carries Erosion, triggers all Erosion stacks immediately. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Erosion: At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10078.webp"
+    },
+    {
+        "name": "Shadowstep",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "Within a single turn, each time the caster loses over 10% of max HP, reduces DMG taken and increases SPD for 2 turns. Stacks up to 5 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10621.webp"
+    },
+    {
+        "name": "Shadowy Current",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "Increases the caster's Dark DMG. Killing an enemy deals additional Dark DMG once to all enemies within 1 grid of the target.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10630.webp"
+    },
+    {
+        "name": "Sharp Feathers",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals DMG to an enemy, there's a 40% chance to generate a Wind Orb near the caster. At the end of the caster's turn, the caster selects a target within 4 grids. Each Wind Orb then attacks that target, dealing Wind DMG once. (Max Wind Orbs: 10)",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10595.webp"
+    },
+    {
+        "name": "Shattering Dance",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Physical DMG 3 times, with a 60% base chance to inflict 1 stack of Riven Heart for 1 turn. Stacks up to 3 times. (Prioritizes large targets)",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Riven Heart: Reduces Block Rate by 10%. Stacks up to 3 times."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10110.webp"
+    },
+    {
+        "name": "Shattering Ice",
+        "class": "Destroyer",
+        "type": "Charm",
+        "description": "When a target frozen by the caster removes the Frozen state, additionally deals Water DMG once.",
+        "cooldown": null,
+        "keywords": [
+            "Frozen [Ailment]: Prevents movement and skill use, and disables activation of Charms or status effects that require casting. Cannot be frozen again while frozen. Base Resilience Break: 50"
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10557.webp"
+    },
+    {
+        "name": "Shattering Sigil",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Fire DMG once and inflicting Sigil. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Shattering Sigil: Increases DMG taken by 60% for the next Technique hit. Prioritizes the inflicted target for enemy attacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10042.webp"
+    },
+    {
+        "name": "Solaris Storm",
+        "class": "Ravager",
+        "type": "Technique",
+        "description": "Deals Fire DMG 3 times to all enemies within a 1-grid square area around the caster, then deals Fire DMG once to all enemies within a 2-grid circular area around the caster. (Zero Initial CD)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10111.webp"
+    },
+    {
+        "name": "Soul Breaker",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "Increase the caster's DMG dealt for every 15% HP lost of the target. Stacks up to 5 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10594.webp"
+    },
+    {
+        "name": "Soul Impact",
+        "class": "Sage",
+        "type": "Charm",
+        "description": "When the caster's summon dies or expires, deals Dark DMG once to all enemies within 2 grids of it.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10530.webp"
+    },
+    {
+        "name": "Soul Pact Resonance",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "Grants an ATK boost when the caster has a summon on the battlefield.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10591.webp"
+    },
+    {
+        "name": "Soul Piercer",
+        "class": "Conqueror",
+        "type": "Technique",
+        "description": "Deals Dark DMG once to all enemies within 3×2 grid area in front of the caster, with a 10% Lifesteal effect.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Lifesteal: Heals the caster for a percentage of DMG dealt to the target. DMG to shields does not trigger this effect."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10089.webp"
+    },
+    {
+        "name": "Soul Protection",
+        "class": "Guardian",
+        "type": "Charm",
+        "description": "At the start of battle, converts 50% of the caster's current HP into a shield. Restores HP proportional to the remaining shield strength upon victory.",
+        "cooldown": null,
+        "keywords": [
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10575.webp"
+    },
+    {
+        "name": "Soul Reap",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Deals Dark DMG twice to 1 enemy within 3 grids of the caster. For every 5% HP lost by the target, this skill deals 5% more DMG, up to a max of 50% increase. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10120.webp"
+    },
+    {
+        "name": "Soul Spark",
+        "class": "Sage",
+        "type": "Charm",
+        "description": "Increases the ATK of the caster's summons but reduces their duration by 2 turns. (Summons last at least 1 turn; this Charm does not affect summons without a turn limit.)",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10603.webp"
+    },
+    {
+        "name": "Soul Splash",
+        "class": "Berserker",
+        "type": "Charm",
+        "description": "The caster's Single-Hit Techniques deal more DMG. Killing an enemy deals additional Fire DMG once to all enemies within 2 grids of the target. The DMG dealt is 60% of the overkill DMG.",
+        "cooldown": null,
+        "keywords": [
+            "Single-Hit Technique: A Technique that deals a single instance of damage, such as Edge Strike or Fire Slash.",
+            "Note: The DMG is fixed and unaffected by Effects or Affinities. In PvP battles, overkill DMG from defeating Summons and Fantomons drops to 20% and 33%, respectively."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10545.webp"
+    },
+    {
+        "name": "Soulbond Restoration",
+        "class": "Dominator",
+        "type": "Charm",
+        "description": "When the caster's summon dies or expires, heals the caster once.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10600.webp"
+    },
+    {
+        "name": "Soulfire Protection",
+        "class": "Berserker",
+        "type": "Charm",
+        "description": "At the start of battle, consumes 50% of the caster's current HP to grant the caster a DMG Reduction effect. This effect cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10590.webp"
+    },
+    {
+        "name": "Soulweave",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "When 3 of the caster's summons die or disappear, summons 1 Infernal Fiend in front of the caster that immediately acts. The summon inherits a percentage of the caster's stats. (The Charm can only trigger once per battle.)",
+        "cooldown": null,
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10629.webp"
+    },
+    {
+        "name": "Source of Vitality",
+        "class": "Paladin",
+        "type": "Charm",
+        "description": "Heals the caster once at the start of the caster's turn.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10572.webp"
+    },
+    {
+        "name": "Spirit Aegis",
+        "class": "Dominator",
+        "type": "Technique",
+        "description": "Grants Spirit Mark to the allied character with the lowest HP within 5 grids of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Spirit Mark: When the bearer takes single DMG exceeding 4% of max HP, consumes the Marks to reduce DMG taken.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10077.webp"
+    },
+    {
+        "name": "Spirit in Fire",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "Reduces DMG taken during the caster's turn.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10608.webp"
+    },
+    {
+        "name": "Star Shattering Slash",
+        "class": "Paladin",
+        "type": "Technique",
+        "description": "Deals Physical DMG once to 1 enemy within 1 grid of the caster. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 3",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10039.webp"
+    },
+    {
+        "name": "Starlight Burst",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Selects a grid within 5 grids of the caster. Deals Light DMG once to all enemies within 2 grids of the target grid, with a 30% base chance to inflict Blind.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Blind: Grants a 50% chance to miss the target when using the next damaging Technique.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10002.webp"
+    },
+    {
+        "name": "Stone Skin",
+        "class": "Paladin",
+        "type": "Charm",
+        "description": "Reduces the caster's DMG taken for 1 turn for every 1 instance of Technique DMG the caster takes. This effect can stack up to 9 times.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10542.webp"
+    },
+    {
+        "name": "Stonechief Summon",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Summons a Stonechief in front of the caster that immediately acts. The summon inherits a percentage of the caster's stats and remains for up to 5 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 5",
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10019.webp"
+    },
+    {
+        "name": "Storm Rhapsody",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Selects a grid within 5 grids of the caster. Deals Wind DMG 3 times to all enemies within 3 grids of the target grid with a 35% base chance to knock them back by 1 grid towards the center of the battlefield.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10116.webp"
+    },
+    {
+        "name": "Strength Rules",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's Physical Mastery.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10535.webp"
+    },
+    {
+        "name": "Stunning Strike",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Physical DMG once, with a 40% base chance to inflict Stun for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Stun [Ailment]: Prevents skill CD reduction, movement, and skill use during the affected unit's turn. Also blocks activation of Charms or statuses that require casting. Base Resilience Break: 50",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10010.webp"
+    },
+    {
+        "name": "Summoner's Frenzy",
+        "class": "Arcanist",
+        "type": "Charm",
+        "description": "Increases the ATK of summons.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10527.webp"
+    },
+    {
+        "name": "Summoning Pact",
+        "class": "Prophet",
+        "type": "Charm",
+        "description": "Summoning consumes 2% of the caster's max HP to increase the summon's HP. Restores all HP consumed by this Charm if the caster survives until victory.",
+        "cooldown": null,
+        "keywords": [
+            "Consumption: Consumes the character's HP to a minimum of 1. Charms still activates even if less or no HP is deducted."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10584.webp"
+    },
+    {
+        "name": "Sunset Sword",
+        "class": "Duelist",
+        "type": "Technique",
+        "description": "Deals Physical DMG 5 times to all enemies in a 3×2 grid area in front of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10053.webp"
+    },
+    {
+        "name": "Swirling Blade",
+        "class": "Guardian",
+        "type": "Technique",
+        "description": "Attacks 1 enemy within 1 grid of the caster, dealing Water DMG once and converting 20% of the DMG dealt into a shield (up to 50% of the caster's max HP) for the caster for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10082.webp"
+    },
+    {
+        "name": "Tactical Adaptation",
+        "class": "Conqueror",
+        "type": "Charm",
+        "description": "When there are 3 or fewer enemies within 2 grids, increases the caster's DMG dealt. When there are more than 3 enemies within 2 grids, reduces the caster's DMG taken.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10609.webp"
+    },
+    {
+        "name": "Tempest Edge",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals Crit DMG to an enemy, causes additional Wind DMG once.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10619.webp"
+    },
+    {
+        "name": "Tempest Sphere",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Wind DMG 5 times to 1 enemy within 3 to 5 grids of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10001.webp"
+    },
+    {
+        "name": "Thalasson Summon",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Summons 1 Thalasson next to the caster that immediately acts. The summon inherits a percentage of the caster's stats. (The Technique can only trigger once per battle.)",
+        "cooldown": null,
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10119.webp"
+    },
+    {
+        "name": "Thunder Judgment",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "When an enemy within 5 grids of the caster casts a Technique, there's a 30% chance to trigger Thunder Strike, dealing Light DMG once. The chance increases to 90% if the target is inflicted with Electro or Wet.",
+        "cooldown": null,
+        "keywords": [
+            "Electro: When the target with Electro takes Light DMG from a Technique, removes the Electro to deal additional Light DMG once and chain it to 1 random enemy within 2 grids of the target.",
+            "Wet: Increases the chance of being Frozen by 30%."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10624.webp"
+    },
+    {
+        "name": "Thunder of Judgment",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Deals Light DMG 3 times to 1 enemy within 5 grids of the caster. (Prioritizes large targets)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10093.webp"
+    },
+    {
+        "name": "Thunderbolt Mark",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "Each time the caster's Technique deals Light DMG to an enemy, there is a 65% base chance to inflict Electro.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Electro: When the target with Electro takes Light DMG from a Technique, removes the Electro to deal additional Light DMG once and chain it to 1 random enemy within 2 grids of the target."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10625.webp"
+    },
+    {
+        "name": "Tough Soul",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's HP.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10550.webp"
+    },
+    {
+        "name": "Treantling Summon",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Summons a Treantling behind the caster that immediately acts. The summon inherits a percentage of the caster's stats, but cannot be the primary target of attacks or healing. It remains for up to 5 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 3",
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10025.webp"
+    },
+    {
+        "name": "Twin Gale",
+        "class": "Magister",
+        "type": "Technique",
+        "description": "Deals Wind DMG twice to 1 enemy within 3 to 5 grids of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10118.webp"
+    },
+    {
+        "name": "Unstable Aura",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "When the caster's Technique deals DMG to an enemy, there's a 25% chance to trigger Aura, dealing additional Wind DMG once, with a 60% base chance to knock them back by 1 grid.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10512.webp"
+    },
+    {
+        "name": "Valor Surge",
+        "class": "Knight",
+        "type": "Technique",
+        "description": "Grants a DMG Boost to all allied characters within 5 grids of the caster for 2 turns and dispels 1 random status ailment or debuff. (Casts once before battle starts.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Ailment: Severe status effects include: Frozen, Stun, Immobilize, Frenzy, and Action Delay. After a target is inflicted with an Ailment, the chance of ailment infliction next turn is halved and keeps dropping with each consecutive infliction.",
+            "Debuff: Negative effects include: stat reduction (e.g., ATK Reduction), DMG over time (e.g., Erosion), increased DMG taken (e.g., Shattering Sigil), Blind, Taunt, etc.",
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10066.webp"
+    },
+    {
+        "name": "Vital Rhythm",
+        "class": "Magister",
+        "type": "Charm",
+        "description": "At the start of the caster's turn, gains 1 stack of Rhythm if the caster's HP is above 30%. This effect stacks up to 5 times and cannot be dispelled.",
+        "cooldown": null,
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "Rhythm: Upon taking lethal DMG, the caster survives with 1 HP, consumes 1 stack of Rhythm, and heals the caster once."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10628.webp"
+    },
+    {
+        "name": "Void Blessing",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Selects a grid within 4 grids of the caster. Increases max HP of all allied characters within 2 grids of the target grid by a percentage of the caster's Max HP for 3 turns. This effect is unique. If the target's HP is below 30%, additionally performs a 5% healing. (Casts once before battle starts.)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Heal: When casting healing Techniques, only heals targets with less than 100% HP. Healing power is based on the caster's max HP.",
+            "At the Start of Battle: When a character has multiple pre-battle skills to cast, they are activated in order: Charms before Techniques, from top to bottom based on their slot order. If multiple units have pre-battle skills, they act in order of highest to lowest SPD at the start of the pre-battle phase. The formal battle turn begins after all units from both sides have cast these skills.",
+            "Max HP Boost: The bearer maintains the current HP percentage when effects that boost max HP are applied or removed.",
+            "Unique Stack: When a target is affected by this effect multiple times, only the best effect is retained.",
+            "Character: Main character and companions only. Summons and materialized Fantomons are not included."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10060.webp"
+    },
+    {
+        "name": "Void Bubble",
+        "class": "Sorcerer",
+        "type": "Charm",
+        "description": "When the caster's HP drops below 50% for the first time in a battle, grants a shield to the caster based on max HP for 2 turns and Dodge for 2 turns (cannot be dispelled).",
+        "cooldown": null,
+        "keywords": [
+            "Dodge: When attacked, the bearer has a 50% chance to be immune to the incoming DMG.",
+            "Shield: Absorbs DMG, depleted before HP when taking DMG. When multiple shields are present: 1. Shields with a turn limit are depleted first, followed by shields without a turn limit; 2. Shields of the same type are depleted in order they applied."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10556.webp"
+    },
+    {
+        "name": "Void Chant",
+        "class": "Prophet",
+        "type": "Technique",
+        "description": "Creates a magic rune that lasts 2 turns. When an enemy within 5 grids casts a Technique, the rune deals Dark DMG once to them. If the target carries Erosion, triggers the Erosion effect once. (Zero Initial CD)",
+        "cooldown": "Cooldown: 2",
+        "keywords": [
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting.",
+            "Erosion: At the start of each turn, triggers Erosion once, dealing Dark DMG once. Erosion lasts for 3 turns. If the same character inflicts Erosion again with the same skill, the duration stacks."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10124.webp"
+    },
+    {
+        "name": "Warrior's Essence",
+        "class": "Warrior",
+        "type": "Charm",
+        "description": "Increases the caster's ATK.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10524.webp"
+    },
+    {
+        "name": "Water Assault",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Water DMG once to all enemies in a 3×4 grid area in front of the caster. DMG decreases by 25% for each subsequent hit on the same target. (Large targets may take multiple hits.)",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10003.webp"
+    },
+    {
+        "name": "Water Shot",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Deals Water DMG once to 1 enemy within 4 grids of the caster.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10000.webp"
+    },
+    {
+        "name": "Water to Ice",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "When the caster's Technique deals Water DMG to an enemy, there's a 50% chance to trigger Condensation, dealing additional Water DMG once, with a 30% base chance to inflict Frozen for 1 turn.",
+        "cooldown": null,
+        "keywords": [
+            "Frozen [Ailment]: Prevents movement and skill use, and disables activation of Charms or status effects that require casting. Cannot be frozen again while frozen. Base Resilience Break: 50",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10560.webp"
+    },
+    {
+        "name": "Waterling Summon",
+        "class": "Arcanist",
+        "type": "Technique",
+        "description": "Summons a Waterling behind the caster that immediately acts. The summon inherits a percentage of the caster's stats, but cannot be the primary target of attacks or healing. It remains for up to 5 turns. (Zero Initial CD)",
+        "cooldown": "Cooldown: 3",
+        "keywords": [
+            "Summon: Summon's level equals the skill level. Summons cannot receive any stat boosts.",
+            "Zero Initial CD: This skill can be cast on the caster's first turn and enters cooldown after casting."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10071.webp"
+    },
+    {
+        "name": "Weakening Hex",
+        "class": "Sage",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Dark DMG once to all enemies within 2 grids of the target grid, with a 50% base chance to inflict Weakened 1 for 2 turns.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Weakened 1: Reduces ATK by 15%. When multiple levels of the same status exist, only the highest level takes effect.",
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10029.webp"
+    },
+    {
+        "name": "Whirlwind Slash",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Physical DMG 4 times to all enemies within a 1-grid square area of the caster.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10014.webp"
+    },
+    {
+        "name": "Wind Blade Slash",
+        "class": "Warrior",
+        "type": "Technique",
+        "description": "Deals Wind DMG once to all enemies in a 1×4 grid area in front of the caster, with a 50% base chance to knock them back by 1 grid.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Knockback: Knocks back the enemy target a certain distance. If collision occurs with other units or obstacles, the colliding enemy target take Physical DMG once equal to 10% of their max HP, at a max of 60% of the caster's ATK."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10012.webp"
+    },
+    {
+        "name": "Wind Blade Spiral",
+        "class": "Destroyer",
+        "type": "Technique",
+        "description": "Selects a grid within 3 grids of the caster. Deals Wind DMG 3 times to all enemies within a 1-grid square area of the target grid, with a 40% base chance to inflict Laceration for 1 turn.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Laceration (Wind Blade Spiral): Takes Wind DMG once when moving (including skill movement, knockback, or pull effects). Laceration status lasts 1 turn and can stack."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10091.webp"
+    },
+    {
+        "name": "Wind's Delight",
+        "class": "Mage",
+        "type": "Technique",
+        "description": "Selects a grid within 6 grids of the caster. Launches 7 waves of wind blades at the target grid and random enemies within 1 grid to the target grid's left and right. Each wave deals Wind DMG once to all enemies within 1 grid of the enemy target. DMG decreases by 35% for each subsequent hit on the same target.",
+        "cooldown": "Cooldown: 1",
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10036.webp"
+    },
+    {
+        "name": "Wind's Shadow",
+        "class": "Sorcerer",
+        "type": "Charm",
+        "description": "Has a 30% chance to deal additional Wind DMG once and a 50% base chance to delay the target's action by 20% after dealing Wind DMG 3 times to an enemy with Techniques.",
+        "cooldown": null,
+        "keywords": [
+            "Base Chance: Represents the base chance of inflicting ailments on the target. The final chance is affected by the attacker's Effect Hit and the target's Effect RES.",
+            "Action Delay: Delays the target's action. A target can be delayed by up to 80% per turn."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10569.webp"
+    },
+    {
+        "name": "Wind's Whisper",
+        "class": "Mage",
+        "type": "Charm",
+        "description": "Increases the caster's Wind DMG.",
+        "cooldown": null,
+        "keywords": [],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10522.webp"
+    },
+    {
+        "name": "Windless Lord",
+        "class": "Ravager",
+        "type": "Charm",
+        "description": "Increase DMG dealt by the caster's Wind Orbs. Each time a Wind Orb is generated, there's a 70% chance to generate another, up to 4 times per turn.",
+        "cooldown": null,
+        "keywords": [
+            "Wind Orb: A wind orb generated by the Charm - Sharp Feathers."
+        ],
+        "icon": "https://cdn.prydwen.gg/images/sword-staff/skills/skill_10618.webp"
+    }
+]

@@ -1,7 +1,12 @@
 const translate = require("../../services/translator");
+const cache = require("../../utils/translationCache");
+const crypto = require("crypto");
 
 module.exports = async (interaction) => {
     try {
+
+        await interaction.deferUpdate();
+
         const [, messageId] = interaction.customId.split(":");
         const targetLanguage = interaction.values[0];
 
@@ -14,22 +19,44 @@ module.exports = async (interaction) => {
 
         console.log("Fetched message:", message.content);
 
-        const translated = await translate(
-            message.content,
-            targetLanguage
-        );
+        const cacheKey = crypto
+            .createHash("sha256")
+            .update(`${message.content}:${targetLanguage}`)
+            .digest("hex");
 
-        await interaction.update({
-            content:
-                `Translated:
-${translated}`,
+        let translated = cache.get(cacheKey);
+
+        if (translated) {
+            console.log("✅ Cache hit");
+        } else {
+            console.log("❌ Cache miss");
+
+            console.time("Google Translation");
+
+            translated = await translate(
+                message.content,
+                targetLanguage
+            );
+
+            console.timeEnd("Google Translation");
+
+            cache.set(cacheKey, translated);
+        }
+
+        await interaction.editReply({
+            content: `Translated:\n${translated}`,
             components: []
         });
 
     } catch (error) {
         console.error(error);
 
-        if (!interaction.replied && !interaction.deferred) {
+        if (interaction.deferred || interaction.replied) {
+            await interaction.editReply({
+                content: "An error occurred.",
+                components: []
+            });
+        } else {
             await interaction.reply({
                 content: "An error occurred.",
                 ephemeral: true
