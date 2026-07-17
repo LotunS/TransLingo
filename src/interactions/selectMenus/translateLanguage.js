@@ -21,12 +21,7 @@ module.exports = async (interaction) => {
 
         await interaction.update({
             content:
-                `🌍 Translation
-
-Original:
-${message.content}
-
-Translated:
+                `Translated:
 ${translated}`,
             components: []
         });
