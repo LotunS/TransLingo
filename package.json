@@ -15,7 +15,8 @@
   "dependencies": {
     "discord.js": "^14.27.0",
     "dotenv": "^17.4.2",
-    "google-translate-api-x": "^10.7.3"
+    "google-translate-api-x": "^10.7.3",
+    "translate-google": "^1.5.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

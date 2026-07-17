@@ -1,33 +1,26 @@
-const {
-    ActionRowBuilder,
-    StringSelectMenuBuilder
-} = require("discord.js");
-
-const languages = require("../utils/languages");
+const translate = require("../interactions/messageContext/translate");
+const translateLanguage = require("../interactions/selectMenus/translateLanguage");
 
 module.exports = async (interaction) => {
-    if (!interaction.isMessageContextMenuCommand()) return;
 
-    if (interaction.commandName === "Translate") {
+    console.log(
+        "Interaction:",
+        interaction.type,
+        interaction.commandName,
+        interaction.customId
+    );
 
-        const menu = new StringSelectMenuBuilder()
-            .setCustomId("translate_language")
-            .setPlaceholder("Select a language")
-            .addOptions(
-                languages.map((language) => ({
-                    label: language.label,
-                    value: language.value,
-                    emoji: language.emoji
-                }))
-            );
+    if (interaction.isMessageContextMenuCommand()) {
+        if (interaction.commandName === "Translate") {
+            return translate(interaction);
+        }
+    }
 
-        const row = new ActionRowBuilder()
-            .addComponents(menu);
+    if (interaction.isStringSelectMenu()) {
+        console.log("Select menu received!");
 
-        await interaction.reply({
-            content: "🌍 Choose the translation language:",
-            components: [row],
-            ephemeral: true
-        });
+        if (interaction.customId.startsWith("translate_language:")) {
+            return translateLanguage(interaction);
+        }
     }
 };
